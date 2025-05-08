@@ -17,7 +17,7 @@ MODEL_FILE = os.path.join(MODEL_DIR, 'startup_risk_model.pkl')
 
 # Function to train and save the model
 def train_and_save_model():
-    df = pd.read_csv("C:/Users/HP/OneDrive/Desktop/VentureWise-master/indian_startup_funding_synthetic.csv")
+    df = pd.read_csv("indian_startup_funding_synthetic.csv")
     
     # Drop leaky or post-funding columns
     df = df.drop(columns=[
